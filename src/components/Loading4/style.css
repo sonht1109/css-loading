@@ -1,0 +1,37 @@
+.loading-4{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: max-content;
+  margin: auto;
+  animation: 1.5s loading-4 linear infinite;
+}
+
+.loading-4_dot{ 
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  border-radius: 10px;
+  background-color: #4b9cdb;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 1px));
+}
+
+.loading-4_circle{
+  width: 30px;
+  height: 30px;
+  border: 2px solid #4b9cdb;
+  border-radius: 50%;
+}
+
+@keyframes loading-4{
+  from{
+    transform: rorate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
