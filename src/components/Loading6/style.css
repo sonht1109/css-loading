@@ -1,0 +1,43 @@
+.loading-6{
+  width: 45px;
+  height: 45px;
+  animation: loading-6 linear infinite 2s;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.loading-6_dot-1, .loading-6_dot-2{
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #4b9cdb;
+  border-radius: 50%;
+  animation: 2s loading-6_bubble cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+.loading-6_dot-2{
+  animation-delay: -1s;
+  top: auto;
+  bottom: 0;
+}
+
+@keyframes loading-6{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-6_bubble{
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}

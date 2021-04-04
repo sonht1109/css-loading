@@ -1,0 +1,26 @@
+.loading-5{
+  width: 79px;
+  height: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.loading-5_square{
+  width: 10px;
+  height: 10px;
+  background-color: #4b9cdb;
+  border-radius: 3px;
+  animation: 1.8s loading-5 cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@keyframes loading-5{
+  0%{
+    transform: translateX(0) rotate(0);
+  }
+  50%{
+    transform: translateX(69px) rotate(360deg);
+  }
+  100%{
+    transform: translateX(0) rotate(0);
+  }
+}
