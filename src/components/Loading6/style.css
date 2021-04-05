@@ -5,7 +5,7 @@
   position: relative;
   margin: auto;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .loading-6_dot-1, .loading-6_dot-2{

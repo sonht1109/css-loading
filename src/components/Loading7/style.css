@@ -1,7 +1,7 @@
 .loading-7{
   margin: auto;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   animation: 0.8s loading-7 linear infinite;
 }
 
