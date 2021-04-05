@@ -5,6 +5,7 @@ import Loading3 from './Loading3'
 import Loading4 from './Loading4'
 import Loading5 from './Loading5'
 import Loading6 from './Loading6'
+import Loading7 from './Loading7'
 import './style.css'
 
 export default function Loading() {
@@ -16,6 +17,7 @@ export default function Loading() {
       <Loading4 />
       <Loading5 />
       <Loading6 />
+      <Loading7 />
     </div>
   )
 }
