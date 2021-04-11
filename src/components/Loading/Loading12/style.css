@@ -1,0 +1,85 @@
+.loading-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.loading-12 span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+  border-radius: 50%;
+  animation: 2s infinite linear loading-12;
+}
+
+/* 12 steps */
+
+@keyframes loading-12 {
+  /* 1 */
+  0% {
+    box-shadow: -8px -8px 0 3px #4b9cdb, 8px -8px 0 3px #4b9cdb,
+      -8px 8px 0 3px #4b9cdb;
+  }
+  /* 2 */
+  8.33333% {
+    box-shadow: -8px -8px 0 3px #4b9cdb, 8px 8px 0 3px #4b9cdb,
+      -8px 8px 0 3px #4b9cdb;
+  }
+  /* 3 */
+  16.66666% {
+    box-shadow: 8px -8px 0 3px #4b9cdb, 8px 8px 0 3px #4b9cdb,
+      -8px 8px 0 3px #4b9cdb;
+  }
+  /* 4 */
+  25% {
+    box-shadow: 8px -8px 0 3px #4b9cdb, 8px 8px 0 3px #4b9cdb,
+      -8px -8px 0 3px #4b9cdb;
+  }
+  /* 5 */
+  33.33333% {
+    box-shadow: 8px -8px 0 3px #4b9cdb, -8px 8px 0 3px #4b9cdb,
+      -8px -8px 0 3px #4b9cdb;
+  }
+  /* 6 */
+  41.66666% {
+    box-shadow: 8px 8px 0 3px #4b9cdb, -8px 8px 0 3px #4b9cdb,
+      -8px -8px 0 3px #4b9cdb;
+  }
+  /* 7 */
+  50% {
+    box-shadow: 8px 8px 0 3px #4b9cdb, -8px 8px 0 3px #4b9cdb,
+      8px -8px 0 3px #4b9cdb;
+  }
+  /* 8 */
+  58.33333% {
+    box-shadow: 8px 8px 0 3px #4b9cdb, -8px -8px 0 3px #4b9cdb,
+      8px -8px 0 3px #4b9cdb;
+  }
+  /* 9 */
+  66.66666% {
+    box-shadow: -8px 8px 0 3px #4b9cdb, -8px -8px 0 3px #4b9cdb,
+      8px -8px 0 3px #4b9cdb;
+  }
+  /* 10 */
+  75% {
+    box-shadow: -8px 8px 0 3px #4b9cdb, -8px -8px 0 3px #4b9cdb,
+      8px 8px 0 3px #4b9cdb;
+  }
+  /* 11 */
+  83.33333% {
+    box-shadow: -8px 8px 0 3px #4b9cdb, 8px -8px 0 3px #4b9cdb,
+      8px 8px 0 3px #4b9cdb;
+  }
+  /* 12 */
+  91.66666% {
+    box-shadow: -8px -8px 0 3px #4b9cdb, 8px -8px 0 3px #4b9cdb,
+      8px 8px 0 3px #4b9cdb;
+  }
+  /* 13 */
+  100% {
+    box-shadow: -8px -8px 0 3px #4b9cdb, 8px -8px 0 3px #4b9cdb,
+      -8px 8px 0 3px #4b9cdb;
+  }
+}
