@@ -5,6 +5,7 @@
   margin: auto;
   justify-content: center;
   grid-gap: 1px;
+  animation: loading-11_rotate linear infinite 2s;
 }
 
 .loading-11 span{
@@ -88,5 +89,14 @@
   60%, 100%{
     transform: translate(0, 0) rotate(0deg) scale(1);
     border-radius: 0;
+  }
+}
+
+@keyframes loading-11_rotate{
+  0%, 60%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(90deg);
   }
 }

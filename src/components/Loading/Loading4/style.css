@@ -5,7 +5,7 @@
   position: relative;
   width: max-content;
   margin: auto;
-  animation: 1.5s loading-4 linear infinite;
+  animation: 1.2s loading-4 ease-in-out infinite;
 }
 
 .loading-4_dot{ 
@@ -17,7 +17,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, calc(-50% + 1px));
+  transform: translate(calc(-50% - 3px), calc(-50% + 1px));
 }
 
 .loading-4_circle{
