@@ -1,0 +1,128 @@
+.loading-16 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 0 auto;
+  /* margin-top: 20px; */
+}
+
+.loading-16 div{
+  position: absolute;
+  background-color: #4b9cdb;
+}
+
+.loading-16 div:nth-child(1){
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  animation: 2.6s loading-16_1 infinite ease-in-out;
+}
+
+.loading-16 div:nth-child(2){
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  animation: 2.6s loading-16_2 infinite ease-in-out;
+}
+
+.loading-16 div:nth-child(3){
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  animation: 2.6s loading-16_3 infinite ease-in-out;
+}
+
+.loading-16 div:nth-child(4){
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  animation: 2.6s loading-16_4 infinite ease-in-out;
+}
+
+@keyframes loading-16_1 {
+  0% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  12.5% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  50%{
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  62.5%{
+    transform: scaleX(1);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+@keyframes loading-16_4{
+  0%{
+    transform: scaleY(1);
+  }
+  37.5%{
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  50%{
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  87.5%{
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  100%{
+    transform: scaleY(1);
+  }
+}
+
+@keyframes loading-16_2 {
+  0% {
+    transform: scaleY(1);
+  }
+  12.5% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  25%{
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  62.5%{
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  75%, 100%{
+    transform: scaleY(1);
+  }
+}
+
+@keyframes loading-16_3 {
+  0% {
+    transform: scaleX(1);
+  }
+  25%{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  37.5%{
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  75%{
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  87.5%, 100%{
+    transform: scaleX(1);
+  }
+}

@@ -6,6 +6,7 @@ import Loading12 from "./Loading12";
 import Loading13 from "./Loading13";
 import Loading14 from "./Loading14";
 import Loading15 from "./Loading15";
+import Loading16 from "./Loading16";
 import Loading2 from "./Loading2";
 import Loading3 from "./Loading3";
 import Loading4 from "./Loading4";
@@ -36,6 +37,7 @@ export default function Loading() {
         <Loading13 />
         <Loading14 />
         <Loading15 />
+        <Loading16 />
       </div>
     </>
   );
