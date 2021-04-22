@@ -1,0 +1,70 @@
+.loading-18{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-18 .dot, .loading-18 .dot::before, .loading-18 .dot::after{
+  width: 12px;
+  height: 12px;
+  background-color: #4b9cdb;
+  border-radius: 50%;
+  position: relative;
+}
+
+.loading-18 .dot{
+  background-color: transparent;
+  /* animation: 2s cubic-bezier(0.86, 0.04, 0.86, 0.99) infinite loading-18_main-dot; */
+}
+
+.loading-18 .dot::before{
+  content: '';
+  position: absolute;
+  left: -25px;
+  animation: 2s cubic-bezier(0.86, 0.04, 0.86, 0.99) infinite loading-18;
+  transform: scale(0);
+}
+
+.loading-18 .dot::after{
+  content: '';
+  position: absolute;
+  left: -25px;
+  animation: 2s cubic-bezier(0.86, 0.04, 0.86, 0.99) infinite 0.5s loading-18;
+  transform: scale(0);
+}
+
+@keyframes loading-18{
+  0%{
+    left: -25px;
+    transform: scale(0);
+  }
+  35%, 65%{
+    left: 0px;
+    transform: scale(1);
+  }
+  100%{
+    left: 25px;
+    transform: scale(0);
+  }
+}
+/* 
+@keyframes loading-18_main-dot{
+  0%, 34%{
+    transform: scale(1);
+  }
+  35%, 59%{
+    transform: scale(1.2);
+  }
+  60%, 74%{
+    transform: scale(1.5);
+  }
+  75%, 99%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+} */
