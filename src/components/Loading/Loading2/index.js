@@ -6,9 +6,7 @@ export default function Loading2() {
     <div className="loading-wrapper">
       <h4 className="title">Loading 2</h4>
       <div className="loading-2">
-        <div className="col"></div>
-        <div className="col"></div>
-        <div className="col"></div>
+        <div className="circle" />
       </div>
     </div>
   );
