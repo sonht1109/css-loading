@@ -1,0 +1,48 @@
+.loading-19 {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-19 .dot::before,
+.loading-19 .dot::after,
+.loading-19 .dot {
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 -18px 0 0 #4b9cdb;
+  border-radius: 50%;
+  animation-name: loading-19;
+  animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.2);
+  animation-iteration-count: infinite;
+}
+
+.loading-19 .dot {
+  animation-duration: 2s;
+  position: relative;
+}
+
+.loading-19 .dot::before, .loading-19 .dot::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loading-19 .dot::before {
+  animation-duration: 1.5s;
+  animation-delay: -0.5s;
+}
+
+.loading-19 .dot::after {
+  animation-duration: 2s;
+  animation-delay: -0.8s;
+}
+
+@keyframes loading-19 {
+  to {
+    transform: rotate(360deg);
+  }
+}
