@@ -1,12 +1,13 @@
 import './App.css';
-import Hook from './components/Hook';
+import Chart from './components/Chart';
 import Loading from './components/Loading';
 
 function App() {
   return (
     <>
     <Loading />
-    <Hook />
+    <Chart />
+    {/* <Hook /> */}
     </>
   );
 }

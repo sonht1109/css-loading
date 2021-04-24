@@ -21,6 +21,7 @@ import Loading7 from "./Loading7";
 import Loading8 from "./Loading8";
 import Loading9 from "./Loading9";
 import "./style.css";
+import Loading22 from "./Loading22";
 
 export default function Loading() {
   return (
@@ -48,6 +49,7 @@ export default function Loading() {
         <Loading19 />
         <Loading20 />
         <Loading21 />
+        <Loading22 />
       </div>
     </>
   );
