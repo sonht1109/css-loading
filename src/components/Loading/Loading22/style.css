@@ -9,7 +9,7 @@
 
 .loading-22 .tube{
   margin: 0 auto;
-  width: 12px;
+  width: 10px;
   height: 50px;
   border: 2px solid #4b9cdb;
   border-radius: 0 0 8px 8px;
@@ -26,7 +26,7 @@
   top: -2px;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
+  width: 16px;
   height: 3px;
   background-color: #4b9cdb;
 }
