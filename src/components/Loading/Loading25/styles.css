@@ -1,0 +1,67 @@
+.loading-25 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+  margin: 0 -5%;
+  overflow: hidden;
+}
+
+.loading-25 .dot {
+  background-color: #4b9cdb;
+  border-radius: 50%;
+  color: #4b9cdb;
+  height: 10px;
+  width: 10px;
+  position: relative;
+  animation: dot-floating 2s infinite cubic-bezier(.15, .6, .9, .1);
+}
+
+.loading-25 .dot::before,
+.loading-25 .dot::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.loading-25 .dot::before {
+  background-color: #4b9cdb;
+  border-radius: 50%;
+  color: #4b9cdb;
+  height: 10px;
+  width: 10px;
+  left: -12px;
+  animation: dot-floating-before 2s infinite ease-in-out;
+}
+
+.loading-25 .dot::after {
+  background-color: #4b9cdb;
+  border-radius: 50%;
+  color: #4b9cdb;
+  height: 10px;
+  width: 10px;
+  left: -24px;
+  animation: dot-floating-after 2s infinite cubic-bezier(.4, 0, 1, 1);
+}
+
+@keyframes dot-floating {
+  0% { left: calc(-50% - 5px); }
+  75% { left: calc(50% + 100px + 5px); }
+  100% { left: calc(50% + 100px + 5px); }
+}
+
+@keyframes dot-floating-before {
+  0% { left: -50px; }
+  50% { left: -12px; }
+  75% { left: -50px; }
+  100% { left: -50px; }
+}
+
+@keyframes dot-floating-after {
+  0% { left: -100px; }
+  50% { left: -24px; }
+  75% { left: -100px; }
+  100% { left: -100px; }
+}

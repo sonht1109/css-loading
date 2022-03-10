@@ -24,6 +24,7 @@ import Loading22 from "./Loading22";
 import Loading23 from "./Loading23";
 import "./style.css";
 import Loading24 from "./Loading24";
+import Loading25 from "./Loading25";
 
 export default function Loading() {
   return (
@@ -54,6 +55,7 @@ export default function Loading() {
         <Loading22 />
         <Loading23 />
         <Loading24 />
+        <Loading25 />
       </div>
     </>
   );
